@@ -6,7 +6,7 @@ textarea.focus()
 textarea.addEventListener('keyup', (e) => {
     createTags(e.target.value)
 
-    if(e.key === 'Enter') {
+    if(e.keyCode == '13') {
         setTimeout(() => {
             e.target.value = ''
         }, 10)
